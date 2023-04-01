@@ -43,7 +43,7 @@ int main() {
     const char *test6_last = "Kim";
     const char *test6_pwd = "Ji9anjwHaeun";
     bool test6 = check_password(test6_first, test6_last, test6_pwd);
-    assert(!test6);
+    assert(!test6); 
 
     const char *test7_first = "Adeline";
     const char *test7_last = "DuBois";

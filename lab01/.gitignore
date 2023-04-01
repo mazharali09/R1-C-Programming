@@ -1,4 +1,6 @@
-ex1
-pwd_checker
-linked_list
-test_ll_cycle
+ex1.out
+pwd_checker.out
+linked_list.out
+test_ll_cycle.out
+.linked_list.c.swp
+.test_ll_cycle.c.swp
