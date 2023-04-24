@@ -9,7 +9,7 @@ main:
     la t3, n
     lw t3, 0(t3)
 fib:
-    beq t3, x0, finish
+    beq t3, x0, finish #branches to finish
     add t2, t1, t0
     mv t0, t1
     mv t1, t2

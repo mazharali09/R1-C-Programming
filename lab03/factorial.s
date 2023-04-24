@@ -19,6 +19,15 @@ main:
 
     addi a0, x0, 10
     ecall # Exit
-
+    
 factorial:
-    # YOUR CODE HERE
+    addi s0, x0, 1 # initializing factorial to 1
+    addi s1, x0, 1 # initializing counter to 1
+loop:
+    blt a0, s1, done # if loop counter equals n, jump to done
+    mul s0, s0, s1   # multiply factorial by loop counter
+    addi s1, s1, 1   # increment loop counter
+    j loop
+done:
+    addi a0, s0, 0
+    jr ra            # return to the calling function
