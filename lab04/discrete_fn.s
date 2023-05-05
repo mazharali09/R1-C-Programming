@@ -77,6 +77,13 @@ main:
 # Think: why might having a1 be useful?
 f:
     # YOUR CODE GOES HERE!
+    # Compute the index/address of the output value in the output array
+    addi   t0, a0, 3
+    slli  t0, t0, 2
+
+    # Load the output value into a0, from dynamic address
+    add   a0, a1, t0
+    lw    a0, 0(a0)
 
     jr ra               # Always remember to jr ra after your function!
 
